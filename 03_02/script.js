@@ -9,6 +9,7 @@ const backpack = {
   pocketNum: 15,
   strapLength: {
     left: 26,
+    
     right: 26,
   },
   lidOpen: false,
