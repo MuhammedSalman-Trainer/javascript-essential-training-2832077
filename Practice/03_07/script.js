@@ -7,9 +7,9 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
-
+   
 const salman={
-    species:"human",
+    species:"homo-sapien",
     senses:6,
     isFunny:false,
     isRomantic:true,
@@ -17,5 +17,10 @@ const salman={
         knowledge:0.75,
         eating:1.00,
         socialCircle:-0.80
+    },
+    isSingle:true,
+    toggleRelationshipStatus(toggleVal){
+        this.isSingle=toggleVal
     }
+    
 }
