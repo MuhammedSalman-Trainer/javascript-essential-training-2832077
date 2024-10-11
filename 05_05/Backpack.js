@@ -7,7 +7,7 @@ class Backpack {
     strapLengthL,
     strapLengthR,
     lidOpen,
-    dateAcquired,
+    dateAcquired, 
     image
   ) {
     this.name = name;

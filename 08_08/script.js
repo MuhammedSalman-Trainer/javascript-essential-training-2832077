@@ -16,7 +16,7 @@ const tipCalculator = (sum, percentage) => {
       Tip percentage: ${percentage}%
       Tip:            ${tip.toFixed(2)}
       Total:          ${total.toFixed(2)}
-    `);
+    `); 
 };
 
 tipCalculator(29.95, 18);

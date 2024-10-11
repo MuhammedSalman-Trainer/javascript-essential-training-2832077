@@ -15,7 +15,7 @@ const markup = (backpack) => {
     backpack.strapLength.right
   } </li>
       <li>Top lid: ${backpack.lidOpen ? "Open" : "Closed"}</li>
-    </ul>
+    </ul> 
   </div>
 `;
 };

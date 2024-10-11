@@ -8,14 +8,13 @@ import backpackObjectArray from "./components/data.js";
 /**
  * Add event listener to the lid-toggle button.
  */
-const lidToggle = function (event, button, newArg) {
-  console.log(event);
+const lidToggle = function (button, newArg) {
   console.log(newArg);
 
   // Find the current backpack object in backpackObjectArray
   let backpackObject = backpackObjectArray.find(
     ({ id }) => id === button.parentElement.id
-  );
+  );   
 
   // Toggle lidOpen status
   backpackObject.lidOpen == true
@@ -30,8 +29,8 @@ const lidToggle = function (event, button, newArg) {
   // Set visible property status text
   let status = button.parentElement.querySelector(".backpack__lid span");
   status.innerText == "closed"
-    ? (status.innerText = "open")
-    : (status.innerText = "closed");
+    ? (status.innerText = "openeeee")
+    : (status.innerText = "closedeeee");
 };
 
 /**
@@ -99,9 +98,7 @@ const backpackList = backpackObjectArray.map((backpack) => {
   let newArg = "The argument I want to pass to the callback function!";
 
   // Add event listener
-  button.addEventListener("click", (event) => {
-    lidToggle(event, button, newArg);
-  });
+  button.addEventListener("click",lidToggle(this,newArg));
 
   return backpackArticle;
 });

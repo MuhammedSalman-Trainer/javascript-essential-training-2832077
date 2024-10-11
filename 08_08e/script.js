@@ -18,7 +18,7 @@ const formatter = (locale = "en-US", currency = "USD", value) => {
 
 const tipCalculator = (sum, percentage, locale, currency) => {
   let tip = sum * (percentage / 100);
-  let total = sum + tip;
+  let total = sum + tip;    
 
   console.log(`
     Sum before tip: ${formatter(locale, currency, sum)}

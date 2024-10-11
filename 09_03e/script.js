@@ -4,12 +4,12 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/Events
  */
 import backpackObjectArray from "./components/data.js";
-
+  
 const backpackList = backpackObjectArray.map((backpack) => {
   let backpackArticle = document.createElement("article");
   backpackArticle.classList.add("backpack");
   backpackArticle.setAttribute("id", backpack.id);
-
+  
   backpackArticle.innerHTML = `
     <figure class="backpack__image">
       <img src=${backpack.image} alt="" loading="lazy" />
@@ -18,7 +18,7 @@ const backpackList = backpackObjectArray.map((backpack) => {
     <ul class="backpack__features">
       <li class="feature backpack__volume">Volume:<span> ${
         backpack.volume
-      }l</span></li>
+      }l</span></li>  
       <li class="feature backpack__color">Color:<span> ${
         backpack.color
       }</span></li>
@@ -48,7 +48,7 @@ const backpackList = backpackObjectArray.map((backpack) => {
   })
 
   return backpackArticle;
-});
+});  
 
 const main = document.querySelector(".maincontent");
 

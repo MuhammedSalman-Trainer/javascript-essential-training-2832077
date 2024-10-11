@@ -1,0 +1,43 @@
+Expected result: <article id="pack01">
+        <h1>Everyday Backpack</h1>
+        <ul>
+            <li>Volume:<span> 30l</span></li>
+            <li>Color:<span> grey</span></li>
+            <li>Age:<span> 2025 days old</span></li>
+            <li>Number of pockets:<span> 15</span></li>
+        </ul>
+        </article><article id="pack02">
+        <h1>Frog Backpack</h1>
+        <ul>
+            <li>Volume:<span> 8l</span></li>
+            <li>Color:<span> green</span></li>
+            <li>Age:<span> 1710 days old</span></li>
+            <li>Number of pockets:<span> 3</span></li>
+        </ul>
+        </article>
+
+
+
+
+
+
+
+
+Your code returned:
+<article id="pack01">
+            <h1>Everyday Backpack</h1>
+            <ul>
+                <li>Volume:<span> 30l</span></li>
+                <li>Color:<span> grey</span></li>
+                <li>Age:<span> 2025 days old</span></li>
+                <li>Number of pockets:<span> 15</span></li>
+            </ul>
+        </article><article id="pack02">
+            <h1>Frog Backpack</h1>
+            <ul>
+                <li>Volume:<span> 8l</span></li>
+                <li>Color:<span> green</span></li>
+                <li>Age:<span> 1710 days old</span></li>
+                <li>Number of pockets:<span> 3</span></li>
+            </ul>
+        </article>

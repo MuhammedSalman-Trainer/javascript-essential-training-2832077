@@ -14,7 +14,7 @@ const nestedObjects = {
   item02: {
     name: "headlamp",
     type: "equipment",
-    weight: 120,
+    weight: 120, 
   },
   item03: {
     name: "pen",

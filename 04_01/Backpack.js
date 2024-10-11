@@ -10,7 +10,7 @@ class Backpack {
     dateAcquired
   ) {
     this.name = name;
-    this.volume = volume;
+    this.volume = volume;  
     this.color = color;
     this.pocketNum = pocketNum;
     this.strapLength = {

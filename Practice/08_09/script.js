@@ -1,21 +1,7 @@
-/**
- * Practice: Pass values between functions
- *
- * Create two functions:
- * - Main function
- *  - Creates new <article> element
- *  - Populates <article> with content (see const content below)
- *  - Returns <article> element to where function is called
- * - Helper image function
- *  - Creates new <figure> element
- *  - Adds <img> markup pointing to frogpack.image
- *  - Adds <figcaption> element with image description
- *  - Returns <figure> element to where function is called
- */
 
 const frogpack = {
   name: "Frog Backpack",
-  volume: 8,
+  volume: 8,   
   color: "green",
   pocketNum: 3,
   strapLength: {
@@ -24,6 +10,8 @@ const frogpack = {
   },
   lidOpen: false,
   image: "../../assets/images/frog.svg",
+  description:
+    "A green kids backpack designed to make the lid look like the face of a frog sticking out its tongue.",
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
@@ -33,7 +21,6 @@ const frogpack = {
   },
 };
 
-// Baseline HTML output
 const content = `
     <h1 class="backpack__name">${frogpack.name}</h1>
     <ul class="backpack__features">
@@ -57,3 +44,24 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+const addFigure = (frogpack)=>{
+  let newFig = document.createElement('figure');
+  let newImg = document.createElement('img');
+  newImg.setAttribute("src", frogpack.image);
+  newImg.setAttribute("alt", "");
+  let newDesc = document.createElement("figcaption");
+  newDesc.innerText = frogpack.description;
+  newFig.append(newImg,newDesc);
+  return newFig;
+}
+
+const createArticle = (frogpack)=>{
+  const newArticle = document.createElement('article');
+  newArticle.innerHTML=content;
+  newArticle.prepend(addFigure(frogpack));
+  return newArticle;
+}
+
+
+document.querySelector('main').append(createArticle(frogpack))

@@ -1,22 +1,8 @@
-/**
- * Practice: Pass values between functions
- *
- * Create two functions:
- * - Main function
- *  - Creates new <article> element
- *  - Populates <article> with content (see const content below)
- *  - Returns <article> element to where function is called
- * - Helper image function
- *  - Creates new <figure> element
- *  - Adds <img> markup pointing to frogpack.image
- *  - Adds <figcaption> element with image description
- *  - Returns <figure> element to where function is called
- */
 
 const frogpack = {
   name: "Frog Backpack",
   volume: 8,
-  color: "green",
+  color: "green",   
   pocketNum: 3,
   strapLength: {
     left: 10,

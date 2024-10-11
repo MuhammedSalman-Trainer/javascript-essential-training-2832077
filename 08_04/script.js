@@ -9,7 +9,7 @@ const greenPack = {
   volume: 8,
   pocketNum: 3,
 };
-
+z
 const addPack = (currentPack) => {
   const newArticle = document.createElement("article");
   newArticle.innerHTML = `

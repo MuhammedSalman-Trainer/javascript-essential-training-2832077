@@ -9,7 +9,7 @@ import Backpack from "./Backpack.js";
 const everydayPack = new Backpack(
   "Everyday Backpack",
   30,
-  "grey",
+  "grey", 
   15,
   26,
   26,
